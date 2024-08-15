@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<h5>This is string interpolation.</h5>
+<br>Expressions:{{45+25}}
+<br>calling functions {{getName()}}
+
+<hr><br>
+
+<h2>Two way data binding.</h2>
+<input type="text" [(ngModel)]='fullname' placeholder="Name">
+<br> Name is : {{fullname}}
+
+<hr><br>
+<h3 [innerText]="property_binding">This is a property binding topic.</h3>
+<h3>This is a property binding topic.</h3>

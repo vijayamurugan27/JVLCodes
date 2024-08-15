@@ -1,0 +1,61 @@
+<div>
+    <h1>For Atribute Directives.</h1>
+    <div>
+        <p [ngClass]="['primary', 'big']">Sample Text.</p>
+    </div>
+    <hr>
+    <div>
+        <p [ngClass]="{'primary' : applyRed}">Sample Text.</p>
+        Apply red: <input type="checkbox" [(ngModel)]="applyRed">
+    </div>
+</div>
+<br>
+<hr>
+<h1>ngStyle.</h1>
+
+<p [ngStyle]="{'color':'red', 'font-size':'40px'}">Sample Text.</p>
+
+
+<!-- ////////////////////// -->
+
+For Sturctural Directives.
+
+<div>
+
+
+    <h1> Component</h1>
+    <app-counter></app-counter>
+    <br>
+    <hr>
+
+    <h1>Structural Directives.</h1>
+    <h3>ngFor Example - (Structural Directives)</h3>
+
+    <ul>
+        <li *ngFor='let movie of movies'>{{movie}}</li>
+    </ul>
+
+    <hr>
+    <br>
+    <h3>ngIf - (Structural Directives)</h3>
+    <!-- <button [(ngmodel)]  = ></button> -->
+    A simple ngIf Sturctural Directives.
+    <p *ngIf="true">Can you see me.</p>
+    <hr>
+
+    <input type="submit" value="click here to show the below text." (click)="showMe()">&nbsp;&nbsp;
+    <input type="submit" value="click here to hide the below text." (click)="showMeNot()">
+    <p *ngIf="ShowME">Can you see me.</p>
+    <br>
+    <hr>
+
+    <input type="checkbox" [(ngModel)]="showME1">
+    <p *ngIf="showME1">Can you see me.</p>
+
+    <br>
+    <hr>
+
+
+</div>
+
+<!-- /////////////// -->

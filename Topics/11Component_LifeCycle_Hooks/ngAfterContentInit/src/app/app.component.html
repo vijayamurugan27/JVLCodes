@@ -1,0 +1,35 @@
+<h2> Life Cycle Hooks</h2>
+<hr><br>
+<h2>ngAfterContentInit Hooks</h2>
+<app-simple-message>
+    <p #messageContent> Hello Angular </p>
+    <p #messageContent> This is a simple example. </p>
+    <p> hai</p>
+
+
+
+
+
+
+</app-simple-message>
+
+
+
+<hr>DoCheck<br><br>
+
+<input type="text" name="title_1" [(ngModel)]="title_1">
+
+
+<!-- for ngOninit -->
+<h2>ngOninit Hook</h2>
+<p>Message: {{message}}</p>
+
+<!-- for ngOnChangesFirstChange -->
+
+<input type="text" name="title" [(ngModel)]='title'>
+<app-child [items]="itemList" [title]="title"></app-child>
+
+
+<!-- for ngOnChange &  -->
+
+<!-- <app-child [items]="itemList" ></app-child> -->
